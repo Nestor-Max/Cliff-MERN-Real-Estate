@@ -1,0 +1,19 @@
+/* Header.css
+.header-image {
+	width: 200px;
+	height: auto;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+} */
+
+.header-container {
+	display: flex;
+	justify-content: center; /* Horizontally center the logo */
+	align-items: center; /* Vertically center the logo */
+	padding: 20px; /* Add padding as needed */
+}
+
+.header-image {
+	max-width: 200px; /* Adjust the maximum width of the logo */
+}
