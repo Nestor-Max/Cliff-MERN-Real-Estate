@@ -23,7 +23,7 @@ export default function Header() {
 						placeholder="Search..."
 						className="bg-transparent focus:outline-none w-24 sm:w-64"
 					/>
-					<FaSearch className="text-blue-500" />
+					<FaSearch className="text-blue-700" />
 				</form>
 
 				<ul className="flex gap-4">
