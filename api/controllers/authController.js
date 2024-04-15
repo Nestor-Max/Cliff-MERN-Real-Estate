@@ -11,7 +11,15 @@ const signup = asyncHandler(async (req, res) => {
 
 	if (!username || !email || !password) {
 		res.status(401);
-		throw new Error('Please provide all necessary information');
+		const missingFields = [];
+		if (!username) missingFields.push('username');
+		if (!email) missingFields.push('email');
+		if (!password) missingFields.push('password');
+		throw new Error(
+			`Please provide all necessary information. Missing fields: ${missingFields.join(
+				', '
+			)}`
+		);
 	}
 
 	const userExist = await User.findOne({ email });
